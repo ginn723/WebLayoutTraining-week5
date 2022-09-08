@@ -1,0 +1,24 @@
+.card-user-image{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+
+// ck-editor
+.ck-editor__editable[role="textbox"] {
+  /* editing area */
+  min-height: 260px;
+  color: $dark-600;
+  font-weight: lighter;
+}
+
+.ck-content .image {
+  /* block images */
+  max-width: 80%;
+  margin: 20px auto;
+}
+

@@ -1,0 +1,18 @@
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "./helpers/utilities";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// fonts-lato,roboto-mono
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
+
+// 全站設定
+@import "./base/base"; 
+
+// layout 共同框架,第一層
+@import "./layout/menu-sidebar";
+
+// 頁面設計
+@import "./pages/index";
+@import "./pages/admin";

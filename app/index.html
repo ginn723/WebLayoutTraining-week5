@@ -1,0 +1,218 @@
+---
+title: ANSWER
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+      <div class="d-flex justify-content-between">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand fs-4" href="./index.html">Assignment</a>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  All Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Course 1</a></li>
+                  <li><a class="dropdown-item" href="#">Course 2</a></li>
+                  <li><a class="dropdown-item" href="#">Course 3</a></li>
+                </ul>
+              </li>
+            </ul>           
+        </nav>
+
+        <div class="d-flex justify-content-end align-items-center">
+          <div class="search-icon">
+            <a href="#"><span class="material-icons me-4">search</span></a>
+          </div>
+          <div class="notice">
+            <a href="#"><span class="material-icons">notifications_active</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mt-7">
+        <div class="dropdown">
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            All (4)
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Course 1</a></li>
+            <li><a class="dropdown-item" href="#">Course 2</a></li>
+            <li><a class="dropdown-item" href="#">Course 3</a></li>
+          </ul>
+        </div>
+
+        <p class="fs-8 text-dark-600">2 comments</p>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-1-list" data-bs-toggle="list" href="#list-1" role="tab" aria-controls="list-1">
+              <div class="d-flex w-100 justify-content-between">
+                <div>
+                  <p class="fs-8">Chapter Assignment 2</p>
+                  <h6 class="fw-bold">Please check this file…</h6>
+                </div>
+                <div>
+                  <p class="fs-8">4 hrs ago</p>
+                  <p class="fs-8 text-dark-600">Emily Wang</p>
+                </div>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action" id="list-2-list" data-bs-toggle="list" href="#list-2" role="tab" aria-controls="list-2">
+
+               <div class="d-flex w-100 justify-content-between">
+                <div>
+                  <p class="fs-8">Chapter Assignment 1</p>
+                  <h6 class="fw-bold">My Homework</h6>
+                </div>
+                <div>
+                  <p class="fs-8">12 hrs ago</p>
+                  <p class="fs-8 text-dark-600">David Xu</p>
+                </div>
+              </div>
+
+            </a>
+            <a class="list-group-item list-group-item-action" id="list-3-list" data-bs-toggle="list" href="#list-3" role="tab" aria-controls="list-3">
+              
+              <div class="d-flex w-100 justify-content-between">
+                <div>
+                  <p class="fs-8">Final Assignment</p>
+                  <h6 class="fw-bold">Have a problem with this…</h6>
+                </div>
+                <div>
+                  <p class="fs-8">18 hrs ago</p>
+                  <p class="fs-8 text-dark-600">Tony Wei</p>
+                </div>
+              </div>
+
+            </a>
+            <a class="list-group-item list-group-item-action" id="list-4-list" data-bs-toggle="list" href="#list-4" role="tab" aria-controls="list-4">
+              
+              <div class="d-flex w-100 justify-content-between">
+                <div>
+                  <p class="fs-8">Final Assignment</p>
+                  <h6 class="fw-bold">Did I do it right?</h6>
+                </div>
+                <div>
+                  <p class="fs-8">19 hrs ago</p>
+                  <p class="fs-8 text-dark-600">Christina Lin</p>
+                </div>
+              </div>
+
+            </a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-1" role="tabpanel" aria-labelledby="list-1-list">
+              
+              <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div>
+                    <p class="fs-8">Chapter Assignment 2 / HTML&CSS</p>
+                    <p class="fw-bold">Please check this file for me, thanks!</p>
+                  </div>
+                  <div class="more">
+                    <a href="#"><span class="material-icons">more_vert</span></a>
+                  </div>
+                </div>
+                <div class="card-body">                  
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                      <img class="card-user-image me-2" src="./assets/images/emilywang.jpeg" alt="">
+                      <div class="card-user-details">
+                        <p>Emily Wang</p>
+                        <p class="fs-8 text-dark-600">10:38 AM (4 hours ago)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="fs-7 mt-3 fw-light ms-8 lh-lg">
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-success font-mono bg-light px-1">div</code> is bigger than the height of the <code class="text-success font-mono bg-light px-1">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?
+                  </p>
+                  <a href="#" class="btn btn-light border mt-3 ms-8" download="HW-2-David.zip">
+                    <span class="material-icons position-absolute">attach_file</span>
+                    <span class="ms-5 fw-bold">HW-2-David.zip</span>
+                  </a>
+                  
+                  <div class="card-comment">
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex">
+                        <img class="card-user-image me-2" src="./assets/images/andychen.jpeg" alt="">
+                        <div class="card-user-details">
+                          <p>Andy Chen (You)</p>
+                          <p class="fs-8 text-dark-600">13:24 AM (1 hours ago)</p>
+                        </div>
+                      </div>
+                      <div class="icons">
+                        <a href="#"><span class="material-icons me-4">star_outline</span></a>
+                        <a href="#"><span class="material-icons">edit</span></a>
+                      </div>
+  
+                    </div>
+                    <p class="fs-7 mt-3 fw-light ms-8 lh-lg">
+                        Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>
+                        
+                        You can:<br> 
+                        　• adjust the <code class="text-success font-mono bg-light px-1"> vertical-align</code> of the image to position it elsewhere <br>
+                        (e.g. the <code class="text-success font-mono bg-light px-1"> middle</code> ) or<br> 
+                        　• change the <code class="text-success font-mono bg-light px-1"> display</code> so it isn’t inline.
+                    </p>
+                  </div>                 
+                </div>
+              </div>                           
+              <!-- ckeditor -->
+              <div class="collapse comment-collapse" id="collapseExample">
+                <div id="editor" class="card editor">
+                  This is some sample content.
+                </div>
+                <div class="d-flex justify-content-end mt-3">
+                  <button class="btn btn-outline-success me-3 edit-cancel">Cancel</button>
+                  <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Reply</button>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex">
+                  <a class="me-4" href="#"><span class="material-icons chevron">chevron_left</span></a>
+                  <a href="#"><span class="material-icons chevron">chevron_right</span></a>
+                </div>
+                
+                <div class="comment-btn">
+                  <button type="button" class="btn btn-outline-success me-3">Mark as read</button>
+                  <button type="button" class="btn btn-success comment-reply">Reply</button>
+                </div>
+              </div>
+
+            </div>
+
+            
+
+            <div class="tab-pane fade" id="list-2" role="tabpanel" aria-labelledby="list-2-list">
+
+             
+
+            </div>
+
+            <div class="tab-pane fade" id="list-3" role="tabpanel" aria-labelledby="list-3-list">
+              
+
+            </div>
+
+            <div class="tab-pane fade" id="list-4" role="tabpanel" aria-labelledby="list-4-list">
+
+              
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+

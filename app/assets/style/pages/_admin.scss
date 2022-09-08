@@ -1,0 +1,16 @@
+// collapse
+.expand_more2 {
+  display: none;
+}
+
+.expand_less2 {
+  display: inline-block;
+}
+
+.collapsed .expand_more2 {
+  display: inline-block;
+}
+
+.collapsed .expand_less2 {
+  display: none;
+}
